@@ -15,7 +15,7 @@
         <div class="text-h3">在庫</div>
         <div class="text-subtitle1">{{ todaysDate }}</div>
       </div>
-      <q-img src="src/assets/scan.jpg" class="header-image absolute-top" />
+      <q-img src="~assets/scan.jpg" class="header-image absolute-top" />
     </q-header>
 
     <q-drawer
@@ -38,10 +38,10 @@
           </q-list>
         </q-scroll-area>
 
-        <q-img class="absolute-top" src="src/assets/scan.jpg" style="height: 192px">
+        <q-img class="absolute-top" src="~assets/scan.jpg" style="height: 192px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
-              <img src="src/assets/white-logo.jpg">
+              <img src="~assets/white-logo.jpg">
             </q-avatar>
             <div class="text-weight-bold">在庫管理</div>
             <div>@在庫管理</div>
