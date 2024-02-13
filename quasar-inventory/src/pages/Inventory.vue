@@ -42,7 +42,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage',
+  name: 'Inventory',
 
   data() {
     return {
