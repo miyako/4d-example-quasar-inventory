@@ -35,6 +35,15 @@
                 在庫
               </q-item-section>
             </q-item>
+            <q-item to="/help" exact clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon name="help" />
+              </q-item-section>
+
+              <q-item-section>
+                へルプ
+              </q-item-section>
+            </q-item>
           </q-list>
         </q-scroll-area>
 
