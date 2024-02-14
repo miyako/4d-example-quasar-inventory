@@ -3,9 +3,9 @@
         <q-list dense>
       <q-item 
         v-for="(item,index) in items"
-        :key="item.title">
+        :key="item.name">
         <q-item-section>
-          <q-item-label>{{ item.title }}</q-item-label>
+          <q-item-label>{{ item.name }}</q-item-label>
         </q-item-section>
         <q-item-section>
           <q-input
@@ -46,33 +46,55 @@ export default defineComponent({
 
   data() {
     return {
-      items: [
-        {
-          title: '商品1',
-          count: 10
-        },
-        {
-          title: '商品2',
-          count: 20
-        },
-        {
-          title: '商品3',
-          count: 30
-        }
-      ]
+      connection: null,
+      items: []
     }
   },
 
   methods: {
     addCount(index) {
-      this.items[index].count++
+      this.items[index].count++;
+      this.setCount(index);
     },
     removeCount(index) {
-      this.items[index].count--
+      this.items[index].count--;
+      this.setCount(index);
     },
     setCount(index) {
-      console.log(this.items[index].count)
+      if(this.connection != null) {
+        let item = this.items[index];
+        this.connection.send(JSON.stringify({action:"setCount", Id: item.Id, count: item.count}));
+      }
     }
-  } 
+
+  },
+
+  created: function() {
+    this.connection = new WebSocket("ws://127.0.0.1/inventory")
+
+    let that = this;
+
+    this.connection.onmessage = function(event) {
+      let data = JSON.parse(event.data);
+      if(data.inventory != null) {
+        that.items = data.inventory;
+      }
+      if(data.item != null) {
+        let Id = data.item.Id;
+        let found = that.items.find(obj => {
+          return obj.Id === Id
+        })
+        if(found != null) {
+          found.count = data.item.count;
+        }
+      }
+    }
+
+    this.connection.onopen = function(event) {
+
+    }    
+
+  }
+
 })
 </script>

@@ -17,19 +17,26 @@ Function onMessage($socket : 4D:C1709.WebSocketConnection; $message : cs:C1710._
 	Case of 
 		: ($socket.wss.dataType="object")
 			
+			var $data : Object
+			
+			$data:=$message.data
+			
 			Case of 
 				: ($message.data.action="setCount")
 					
 					$status:=ds:C1482.Items.setCount($message.data.Id; $message.data.count)
 					
+					$data:={item: {Id: $status.item.Id; count: $status.item.count}}
+					
+					
 					If ($status.success)
 						var $connection : Object
 						For each ($connection; $socket.wss.connections.query("id != :1"; $socket.id))
-							$connection.send({item: {Id: $status.item.Id; count: $status.item.count}})
+							$connection.send($data)
 						End for each 
 					End if 
 					
-					$socket.send({item: {Id: $status.item.Id; count: $status.item.count}})
+					$socket.send($data)
 					
 			End case 
 			
