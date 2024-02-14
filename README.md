@@ -42,9 +42,10 @@ npm install -g cordova
 npm install -g ios-deploy
 ```
 
-* OK: `quasar dev -m ios` （iOS Simulatorは終了しておく）
+* OK: `quasar dev   -m ios` （iOS Simulatorは終了しておく）
+* NG: `quasar build -m ios`
 
 ### Android
 
-* NG
-* OK `quasar build --mode cordova --target android`
+* NG: `quasar dev   --mode cordova --target android`
+* OK: `quasar build --mode cordova --target android`
