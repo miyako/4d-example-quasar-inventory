@@ -26,12 +26,12 @@ npm init quasar
 quasar build -m electron
 ```
 
-### モバイル（うまくいかなかった）
+### モバイル
 
 Turn on "Developer Mode" in iPhone
 
 ```
 npm install -g cordova
 npm install -g ios-deploy
-quasar dev -m ios
+quasar build -m ios --ide
 ```
