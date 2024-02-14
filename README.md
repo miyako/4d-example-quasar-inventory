@@ -22,6 +22,12 @@ npm init quasar
 
 ```
 quasar build -m electron
+```
+
+Turn on "Developer Mode" in iPhone
+
+
+```
 npm install -g cordova
 npm install -g ios-deploy
 quasar dev -m ios
