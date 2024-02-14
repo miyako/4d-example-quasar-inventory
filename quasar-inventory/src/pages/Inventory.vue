@@ -10,8 +10,7 @@
         <q-item-section>
           <q-input
             v-on:change="setCount(index)"
-            class="col"
-            square
+            type="tel"
             v-model.number="item.count"
             filled
             bg-color="white"

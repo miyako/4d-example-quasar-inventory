@@ -24,10 +24,9 @@ Function onMessage($socket : 4D:C1709.WebSocketConnection; $message : cs:C1710._
 			Case of 
 				: ($message.data.action="setCount")
 					
-					$status:=ds:C1482.Items.setCount($message.data.Id; $message.data.count)
+					$status:=ds:C1482.Items.setCount($message.data.Id; Num:C11($message.data.count))
 					
 					$data:={item: {Id: $status.item.Id; count: $status.item.count}}
-					
 					
 					If ($status.success)
 						var $connection : Object
