@@ -8,6 +8,7 @@ npm install -g @quasar/legacy-create
 npm init quasar
 ```
 
+### 開発
 
 * App with Quasar CLI, let's go!
 * Project folder: `quasar-inventory`
@@ -20,9 +21,31 @@ npm init quasar
 * cd quasar-inventory
 * quasar dev
 
+### ビルド
+
+```
+quasar build
+```
+
+* `dist/spa`をWebFolderに移動する
+
+### デスクトップ
+
 ```
 quasar build -m electron
+```
+
+### iOS
+
+```
 npm install -g cordova
 npm install -g ios-deploy
-quasar dev -m ios
 ```
+
+* OK: `quasar dev   -m ios` （iOS Simulatorは終了しておく）
+* NG: `quasar build -m ios`
+
+### Android
+
+* NG: `quasar dev   --mode cordova --target android`
+* OK: `quasar build --mode cordova --target android`
