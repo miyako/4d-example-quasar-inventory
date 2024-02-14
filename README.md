@@ -28,24 +28,4 @@ quasar build
 ```
 
 * `dist/spa`をWebFolderに移動する
-
-### デスクトップ
-
-```
-quasar build -m electron
-```
-
-### iOS
-
-```
-npm install -g cordova
-npm install -g ios-deploy
-```
-
-* OK: `quasar dev   -m ios` （iOS Simulatorは終了しておく）
-* NG: `quasar build -m ios`
-
-### Android
-
-* NG: `quasar dev   --mode cordova --target android`
 * OK: `quasar build --mode cordova --target android`
