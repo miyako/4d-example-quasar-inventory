@@ -20,12 +20,15 @@ npm init quasar
 * cd quasar-inventory
 * quasar dev
 
+### デスクトップ
+
 ```
 quasar build -m electron
 ```
 
-Turn on "Developer Mode" in iPhone
+### モバイル（うまくいかなかった）
 
+Turn on "Developer Mode" in iPhone
 
 ```
 npm install -g cordova
