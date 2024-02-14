@@ -19,3 +19,9 @@ npm init quasar
 * Sass with SCSS syntax
 * cd quasar-inventory
 * quasar dev
+
+```
+quasar build -m electron
+npm install -g cordova
+quasar dev -m ios
+```
