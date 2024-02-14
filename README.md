@@ -19,4 +19,3 @@ npm init quasar
 * Sass with SCSS syntax
 * cd quasar-inventory
 * quasar dev
-```
