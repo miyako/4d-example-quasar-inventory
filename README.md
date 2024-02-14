@@ -35,10 +35,11 @@ quasar build
 quasar build -m electron
 ```
 
-### 調査中
+### iOS
 
 ```
 npm install -g cordova
 npm install -g ios-deploy
-quasar build -m ios --ide
 ```
+
+* OK: `quasar dev -m ios`
