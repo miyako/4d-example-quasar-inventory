@@ -70,7 +70,7 @@ export default defineComponent({
   },
 
   created: function() {
-    this.connection = new WebSocket("ws://127.0.0.1/inventory")
+    this.connection = new WebSocket("ws://"+window.location.hostname+"/inventory")
 
     let that = this;
 
