@@ -47,3 +47,4 @@ npm install -g ios-deploy
 ### Android
 
 * NG
+* OK `quasar build --mode cordova --target android`
