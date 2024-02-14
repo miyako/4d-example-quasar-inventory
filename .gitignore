@@ -1,2 +1,4 @@
 inventory/userPreferences.*
 inventory/Project/DerivedData/*
+quasar-inventory/src-capacitor/*
+quasar-inventory/src-cordova/*
