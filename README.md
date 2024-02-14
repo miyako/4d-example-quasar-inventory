@@ -43,3 +43,7 @@ npm install -g ios-deploy
 ```
 
 * OK: `quasar dev -m ios` （iOS Simulatorは終了しておく）
+
+### Android
+
+* NG
