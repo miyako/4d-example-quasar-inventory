@@ -23,5 +23,6 @@ npm init quasar
 ```
 quasar build -m electron
 npm install -g cordova
+npm install -g ios-deploy
 quasar dev -m ios
 ```
