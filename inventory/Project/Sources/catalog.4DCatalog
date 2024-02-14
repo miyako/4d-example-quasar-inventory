@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="inventory" uuid="9ACF99521B4C4170BDFEE2C2F7507855" collation_locale="ja">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Items" uuid="31008D46CDD645B7BF0CF12BDFFE5F92" id="1">
+		<field name="Id" uuid="D489121A223145D49471799EDA9643A0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="BD2C9421D5AB43FFBBEF1672008EB8C5" type="10" limiting_length="80" id="2"/>
+		<field name="count" uuid="E9A700F4F015451F88B1DDC7C8DAF2C5" type="3" id="3"/>
+		<primary_key field_name="Id" field_uuid="D489121A223145D49471799EDA9643A0"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="249" green="255" blue="212" alpha="255"/>
+				<coordinates left="22.984375" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" uuid="6B98254B8A2444229647986DBD9B176B" type="1">
+		<field_ref uuid="BD2C9421D5AB43FFBBEF1672008EB8C5" name="name">
+			<table_ref uuid="31008D46CDD645B7BF0CF12BDFFE5F92" name="Items"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C14BCDCB713F42C89247AAB8255261A1" type="1">
+		<field_ref uuid="E9A700F4F015451F88B1DDC7C8DAF2C5" name="count">
+			<table_ref uuid="31008D46CDD645B7BF0CF12BDFFE5F92" name="Items"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D2C2F541A94E4B9A86EAF7B7864C75EA" type="7">
+		<field_ref uuid="D489121A223145D49471799EDA9643A0" name="Id">
+			<table_ref uuid="31008D46CDD645B7BF0CF12BDFFE5F92" name="Items"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

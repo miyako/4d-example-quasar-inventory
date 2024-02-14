@@ -1,0 +1,67 @@
+{
+	"Demo": {
+		"methods": [
+			"create_records",
+			"TEST_Inventory",
+			"TEST_Worker"
+		],
+		"forms": [
+			"Inventory"
+		]
+	},
+	"ORDA": {
+		"tables": [
+			"Items"
+		],
+		"classes": [
+			"Items"
+		]
+	},
+	"Prototype": {
+		"classes": [
+			"_Connection",
+			"_Error",
+			"_Message",
+			"_Open",
+			"_Terminate"
+		]
+	},
+	"View": {
+		"classes": [
+			"_Form",
+			"_InventoryForm"
+		]
+	},
+	"Web Socket Client": {
+		"classes": [
+			"_WSC",
+			"InventoryUI"
+		]
+	},
+	"Web Socket Client Controller": {
+		"classes": [
+			"_WSC_Controller",
+			"Inventory_WSC_Controller",
+			"InventoryUI_WSC_Controller"
+		]
+	},
+	"Web Socket Connection": {
+		"classes": [
+			"_WSS_Connection",
+			"Inventory_WSS_Connection"
+		]
+	},
+	"Web Socket Server": {
+		"classes": [
+			"_WSS",
+			"Inventory"
+		]
+	},
+	"Web Socket Server Controller": {
+		"classes": [
+			"_WSS_Controller",
+			"Inventory_WSS_Controller"
+		]
+	},
+	"trash": {}
+}
