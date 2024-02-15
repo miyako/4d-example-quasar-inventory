@@ -71,6 +71,8 @@ export default defineComponent({
   created: function() {
 
     let hostname = window.location.hostname;
+    hostname = hostname == "" ? "192.168.1.153" : hostname;
+
     this.connection = new WebSocket("ws://"+hostname+"/inventory")
 
     let that = this;
@@ -93,7 +95,7 @@ export default defineComponent({
 
     this.connection.onopen = function(event) {
 
-    }    
+    }   
 
   }
 
