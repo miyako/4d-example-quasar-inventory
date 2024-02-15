@@ -1,6 +1,10 @@
 # 4d-example-quasar-inventory
 在庫管理サンプル
 
+![](https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/2f58a29c-9733-4650-9d61-49141b05ee78)
+
+![](https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/744358fb-d00e-46e9-86d5-71f55087521f)
+
 ```
 npm install -g npm@10.4.0
 npm i -g @quasar/cli
@@ -29,10 +33,18 @@ quasar build
 
 ### Cordova
 
-* config.xml
-
 WebSocketを許可するために
+
+* config.xml
 
 ```xml
 <access origin="*" />
 ```
+
+サーバーのIPアドレスを`window.location.hostname`から参照せずに取得する
+
+```
+
+* `quasar build -m ios --ide`でXcodeを開き，Teamを設定する
+
+![](https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/95782382-4b43-4f4e-a1f8-caaba643849b)
