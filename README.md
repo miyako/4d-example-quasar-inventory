@@ -27,5 +27,12 @@ npm init quasar
 quasar build
 ```
 
-* `dist/spa`をWebFolderに移動する
-* OK: `quasar build --mode cordova --target android`
+### Cordova
+
+* config.xml
+
+WebSocketを許可するために
+
+```xml
+<access origin="*" />
+```
