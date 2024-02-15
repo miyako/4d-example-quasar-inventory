@@ -43,7 +43,7 @@ WebSocketを許可するために
 <access origin="*" />
 ```
 
-* サーバーのIPアドレスを`window.location.hostname`から参照せずに取得する
+* [サーバーのIPアドレス](https://github.com/miyako/4d-example-quasar-inventory/blob/main/quasar-inventory/src/pages/Inventory.vue#L74)を`window.location.hostname`から参照せずに取得する
 * `quasar build -m ios --ide`でXcodeを開き，Teamを設定する
 
 <img src="https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/95782382-4b43-4f4e-a1f8-caaba643849b" height="50" />
