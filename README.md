@@ -1,3 +1,5 @@
+![version](https://img.shields.io/badge/version-20%20R3%2B-E23089)
+
 # 4d-example-quasar-inventory
 在庫管理サンプル
 
