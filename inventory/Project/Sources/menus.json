@@ -22,6 +22,10 @@
 			"title": ":xliff:CommonMenuFile",
 			"items": [
 				{
+					"title": "在庫",
+					"method": "TEST_Inventory"
+				},
+				{
 					"title": ":xliff:CommonMenuItemQuit",
 					"shortcutAccel": true,
 					"shortcutKey": "Q",

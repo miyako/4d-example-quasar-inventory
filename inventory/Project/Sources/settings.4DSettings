@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
 	<com.4d>
-		<general component_classStore_name="" startup_environnement="0"/>
+		<general component_classStore_name="" startup_environnement="1"/>
 		<compiler>
 			<options syntax_file="false"/>
 		</compiler>
+		<interface>
+			<user sdi_application="true"/>
+		</interface>
 	</com.4d>
 </preferences>
