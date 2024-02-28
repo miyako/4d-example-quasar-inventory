@@ -3,9 +3,9 @@
 # 4d-example-quasar-inventory
 在庫管理サンプル
 
-<img src="https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/2f58a29c-9733-4650-9d61-49141b05ee78" height="400" />
+<img src="https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/2f58a29c-9733-4650-9d61-49141b05ee78" style="height:360px;width:auto;" />
 
-<img src="https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/744358fb-d00e-46e9-86d5-71f55087521f" height="400" />
+<img src="https://github.com/miyako/4d-example-quasar-inventory/assets/1725068/744358fb-d00e-46e9-86d5-71f55087521f" style="height:360px;width:auto;" />
 
 ```
 npm install -g npm@10.4.0
